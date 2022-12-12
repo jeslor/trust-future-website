@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="author" content="Jeslor Ssozi"> -->
+    <link runat="server" rel="shortcut icon" href="favicon.png" type="png" />
+    <link runat="server" rel="icon" href="favicon.png" type="image/png" />
+    <!-- =============================================== -->
+    <!-- CSS ALL -->
+    <!-- =============================================== -->
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/7dce00fe2b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap 4.1 -->
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css" />
+    <!-- custom Css -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <meta
+      name="description"
+      content="Your generous support allows Trust Future Ministries to meet the basic, physical, and spiritual needs of many of the most vulnerable and orphan children, youths and widows in our community."
+    />
+
+    <title>Donate - Trust Future Ministries</title>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div class="main-navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #e3f2fd;"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="img-responsive" src="logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler first-button"
+            type="button"
+            data-toggle="collapse"
+            data-target="#menu-items"
+            aria-controls="#menu-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="animated-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="menu-items">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  About us
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class=""><a href="who-we-are.html">Who we are</a></li>
+                  <li><a href="our-team.html">Our team</a></li>
+                  <li><a href="statement-of-faith.html">What we Believe</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  Our work
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="education.html">Education</a></li>
+                  <li><a href="empowerment.html">Empowerment</a></li>
+                  <li><a href="orphan-care.html">Orphan Care</a></li>
+                  <li><a href="sustainability.html">Sustainability</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-item">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  Join Us
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="sponsor-a-child.html">Sponsor a Child</a></li>
+                  <li><a href="volunteer.html">Volunteering</a></li>
+                  <li><a href="visit.html">Visit TFM</a></li>
+                  <li><a href="pray.html">Pray with us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact us</a>
+              </li>
+            </ul>
+            <div class="space_navbar_buttons">
+              <span class="text-center">
+                <a class="active_menu btn-radius-style" href="donate.html">
+                  <i class="fas fa-heart"></i>
+                  Donate
+                </a>
+              </span>
+              <span class="mb-0 ml-1 pr-1 d-lg-none d-xl-inline">
+                <a
+                  class="social_handles"
+                  href="https://web.facebook.com/profile.php?id=150644615117946&fref=ts"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </span>
+              <span class="mb-0">
+                <a
+                  class="social_handles d-lg-none d-xl-inline"
+                  href="https://www.instagram.com/trustfutureministries/"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="all_page_title"
+      style="
+        background: url(/media/images/inner-bg5.jpg);
+        background-position: center;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Make a Donation</h1>
+            <nav id="bread-nav">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  donate
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section container_dark">
+      <div class="container">
+        <div class="row container-header">
+          <div class="col-lg-8">
+            <h1>Send a donation</h1>
+            <p>
+              Your generous support allows Trust Future Ministries to meet the
+              basic, physical, and spiritual needs of many of the most
+              vulnerable and orphan children, youths and widows in our
+              community. Hope has been restored, lives saved, families re-united
+              and communities changed because of your generosity.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 space-donations">
+            <div class="one-time">
+              <h4>Onetime donation</h4>
+              <p>
+                By using this section, you will be donating once. You can
+                further add a note to which project your donation should go
+                while on the next page.
+                <br />
+                <span class="text-below">Thank you!!</span>
+              </p>
+              <a
+                class="btn-radius-btn6"
+                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=69JXG3PWWF4HL"
+              >
+                Donate one-time
+                <i class="fab fa-gratipay"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 space-donations">
+            <div class="reccurring">
+              <h4>Recurring Donations</h4>
+              <form
+                class="reccuring-donate"
+                action="https://www.paypal.com/cgi-bin/webscr"
+                method="post"
+              >
+                <input name="cmd" type="hidden" value="_xclick-subscriptions" />
+                <!--You will need to set the email to your PayPal email or Secure Merchant ID -->
+                <input
+                  name="business"
+                  type="hidden"
+                  value="jbestius@gmail.com"
+                />
+                <input name="lc" type="hidden" value="US" />
+                <input
+                  name="item_name"
+                  type="hidden"
+                  value="Donate to TRUST FUTURE MINISTRIES"
+                />
+                <input name="item_number" type="hidden" value="1234" />
+                <input name="no_note" type="hidden" value="1" />
+                <input name="no_shipping" type="hidden" value="2" />
+                <input name="src" type="hidden" value="1" />
+                <input name="p3" type="hidden" value="1" />
+                <input name="currency_code" type="hidden" value="USD" />
+                <input
+                  name="bn"
+                  type="hidden"
+                  value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted"
+                />
+                <table style="height: 100%;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="width: 100%;">
+                        I would like to make a donation *
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select name="t3">
+                          <option value="M">Monthly</option>
+                          <option value="W">Weekly</option>
+                          <option value="Y">Annually</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 100%;">
+                        When should it this reccuring stop *
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select name="srt">
+                          <option value="0">
+                            I want to keep donating Monthly
+                          </option>
+                          <option value="2">After 2 times</option>
+                          <option value="3">After 3 times</option>
+                          <option value="4">After 4 times</option>
+                          <option value="5">After 5 times</option>
+                          <option value="6">After 6 times</option>
+                          <option value="7">After 7 times</option>
+                          <option value="8">After 8 times</option>
+                          <option value="9">After 9 times</option>
+                          <option value="10">After 10 times</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Purpose of the Donation
+                        <br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          maxlength="60"
+                          name="a3"
+                          type="text"
+                          placeholder="Food donation"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Enter Your Donation Amount in USD ($) *
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          maxlength="60"
+                          name="a3"
+                          type="text"
+                          placeholder="$50"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button
+                  alt="PayPal - The safer, easier way to 
+                            pay online!"
+                  name="submit"
+                  class="btn-radius-btn6"
+                  type="submit"
+                >
+                  Continuous donation
+                  <i class="fab fa-gratipay"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of first section -->
+
+    <section class="section">
+      <div class="container">
+        <hr class="hr-style mb-4" data-content="Fundraiser" />
+        <div class="row container-header">
+          <div class="col-lg-8">
+            <h2>On going Fundraiser</h2>
+          </div>
+        </div>
+        <div class="row container-header py-5 single-cause donate_cause">
+          <div class="col-lg-6 text-center cause-normal">
+            <div class="cause-thumb">
+              <img
+                class="img-fluid"
+                src="/media/images/landCampaign_donate.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 work-decs2">
+            <h2>
+              New home Fundraiser
+            </h2>
+            <p>
+              We purchased a piece of land where we are constructing a new
+              school and accomodation for our children. The construction work is
+              of this school is at its final pahase and you can't imagine how
+              excited the children and the staffs are to get to move.
+            </p>
+            <p>
+              Your generous gift will help us pay labour and buy materials like
+              cement, sand, iron bars, etc and on top of that help with the
+              furnishing of the classrooms and the accomodations (desks, tables,
+              beds, etc).
+            </p>
+            <!-- <div class="my-bars">
+              <div id="bar1" class="barfiller">
+                <div class="tipWrap">
+                  <span class="tip"></span>
+                </div>
+                <span class="fill" data-percentage="66"></span>
+              </div>
+              <div class="d-flex justify-content-end gauge-info">
+                 <p>Raised: $19,798</p>
+                <p style="font-weight: bold;">
+                  Remaining Land balance: $10,202
+                </p>
+              </div> -->
+            <div>
+              <a
+                href="https://www.paypal.com/donate?hosted_button_id=8U5LRDETPUX6N"
+                class="btn-radius-btn6"
+              >
+                Donate now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-donation">
+          <hr class="hr-style mb-4" data-content="project donation" />
+          <div class="row container-header">
+            <div class="col-lg-8">
+              <h2>Donate directly to a cause</h2>
+              <p>
+                You have our hearts filled with thanks for the interest to
+                donate to one of our projects. We never take it for granted that
+                you chosen to support us. May God bless your income.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              id="donate-to-education"
+              class="col-md-6 col-lg-4"
+              data-aos="fade"
+              data-aos-easing="ease-out"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              <div class="donate-each">
+                <figure>
+                  <img src="/media/images/education_donate.jpg" alt="" />
+                  <div
+                    class="figure-overlay w-100 h-100 align-items-center position-absolute d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HDVGYZBMW6XTL&source=url"
+                      class="btn-radius-btn6"
+                    >
+                      Donate now
+                    </a>
+                  </div>
+                </figure>
+                <div class="donate-each-content">
+                  <h3 class="text-center">
+                    Donate to education
+                  </h3>
+                  <h2 class="bottom-line"></h2>
+                  <p>
+                    By donatng towards our education project, you are enabling
+                    an orphan child, a street child or the one from a poor
+                    family access education.
+                  </p>
+                  <p class="text-center">
+                    <a
+                      class="btn-radius-btn6"
+                      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HDVGYZBMW6XTL&source=url"
+                    >
+                      Donate now
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="donate-to-empowerment"
+              class="col-md-6 col-lg-4"
+              data-aos="fade"
+              data-aos-easing="ease-out"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              <div class="donate-each">
+                <figure>
+                  <img src="/media/images/empowerment_donate.jpg" alt="" />
+                  <div
+                    class="figure-overlay w-100 h-100 align-items-center position-absolute d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EA8QMV7D4QLFE&source=url"
+                      class="btn-radius-btn6"
+                    >
+                      Donate now
+                    </a>
+                  </div>
+                </figure>
+                <div class="donate-each-content">
+                  <h3 class="text-center">
+                    Donate to Empowerment
+                  </h3>
+                  <h2 class="bottom-line"></h2>
+                  <p>
+                    By donatng towards our empowerment project you are enabling
+                    a widowed mother or a youth attain skills to start or join a
+                    business.
+                  </p>
+                  <p class="text-center">
+                    <a
+                      class="btn-radius-btn6"
+                      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EA8QMV7D4QLFE&source=url"
+                    >
+                      Donate now
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="donate-to-sustainability"
+              class="col-md-6 col-lg-4"
+              data-aos="fade"
+              data-aos-easing="ease-out"
+              data-aos-once="true"
+              data-aos-duration="1000"
+            >
+              <div class="donate-each">
+                <figure>
+                  <img src="/media/images/sustainability_donate.jpg" alt="" />
+                  <div
+                    class="figure-overlay w-100 h-100 align-items-center position-absolute d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=23BJ4K8KZ87WQ&source=url"
+                      class="btn-radius-btn6"
+                    >
+                      Donate now
+                    </a>
+                  </div>
+                </figure>
+                <div class="donate-each-content">
+                  <h3 class="text-center">
+                    Donate to sustainability
+                  </h3>
+                  <h2 class="bottom-line"></h2>
+                  <p>
+                    By donatng towards our sustainability program, you are
+                    giving towards our future food supply chain and income
+                    generatig activities.
+                  </p>
+                  <p class="text-center">
+                    <a
+                      class="btn-radius-btn6"
+                      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=23BJ4K8KZ87WQ&source=url"
+                    >
+                      Donate now
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of second section -->
+
+    <footer>
+      <div class="footer-style">
+        <div class="wide-container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <h5 class="footer-header">Financial Accountability</h5>
+              <div class="d-flex justify-content-start">
+                <img
+                  class="img-fluid"
+                  src="/media/images/Audited_accounts_2019.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <p class="pt-3">
+                Trust Future Ministries receives a four star rating for
+                financial accountability. We treasure and thank you all who
+                stand with us to serve the indigent people in our community.
+              </p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <h5 class="footer-header">Social media handles</h5>
+              <ul class="footer-widget">
+                <li>
+                  <a
+                    href="https://web.facebook.com/profile.php?id=150644615117946&fref=ts"
+                  >
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/trustfutureministries/">
+                    <i class="fab fa-instagram"></i>
+                    Intagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCsgXCuDbUYqohdT1DRfe0iQ"
+                  >
+                    <i class="fab fa-youtube"></i>
+                    Youtube
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <h5 class="footer-header">Direct Links</h5>
+              <ul class="direct-links">
+                <li><a href="who-we-are.html">About us</a></li>
+                <li><a href="volunteer.html">volunteering</a></li>
+                <li><a href="sponsor-a-child.html">sponsor a child</a></li>
+                <li><a href="empowerment.html">Women Empowerment</a></li>
+                <li>
+                  <a href="education.html">Trust Future Primary School</a>
+                </li>
+                <li><a href="donate.html">Donate</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <h5 class="footer-header">contact us</h5>
+              <ul class="footer-widget">
+                <li>
+                  <a href="mailto:info@trustfutureministries.org">
+                    <i class="fas fa-envelope"></i>
+                    info@trustfutureministries.org
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html">
+                    <i class="fas fa-globe"></i>
+                    www.trustfutureministries.org
+                  </a>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  Wakiso District - Uganda
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  +256 200 902266
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright-text">
+        <div class="container">
+          <div class="col-lg-12">
+            <p class="text-center">
+              Copyright &copy; 2011 -
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              All rights reserved.
+              <span class="lastfooter-break1">Trust Future Ministries</span>
+              <span class="lastfooter-break2">
+                <i class="far fa-heart" aria-hidden="true"></i>
+                <strong><em>Powered by Jlibz</em></strong>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script
+      type="text/javascript"
+      src="/assets/js/lib/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/lib/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/lib/jquery.barfiller.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script type="text/javascript" src="/assets/js/lib/swiper.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/lib/baguetteBox.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/lib/bootstrap.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+  </body>
+</html>

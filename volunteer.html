@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="author" content="Jeslor Ssozi"> -->
+    <link runat="server" rel="shortcut icon" href="favicon.png" type="png" />
+    <link runat="server" rel="icon" href="favicon.png" type="image/png" />
+    <!-- =============================================== -->
+    <!-- CSS ALL -->
+    <!-- =============================================== -->
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7dce00fe2b.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.1 -->
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css">
+    <!-- custom Css -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <meta name="description"
+        content="Volunteering is rewarding and appealing. You will not only gain valuable experience but also help us to extend the impact of Trust Future Ministries and to fulfill our mission. You can help us grow and prosper by sharing your talents.">
+    <title>Volunteering - Trust Future Ministries</title>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <div class="main-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-responsive" src="logo.png" alt="">
+                </a>
+                <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
+                    data-target="#menu-items" aria-controls="#menu-items" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                <div class="collapse navbar-collapse" id="menu-items">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown">About us <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class=""><a href="who-we-are.html">Who we are</a></li>
+                                <li><a href="our-team.html">Our team</a></li>
+                                <li><a href="statement-of-faith.html">What we Believe</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown">Our work <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="education.html">Education</a></li>
+                                <li><a href="empowerment.html">Empowerment</a></li>
+                                <li><a href="orphan-care.html">Orphan Care</a></li>
+                                <li><a href="sustainability.html">Sustainability</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-item active_menu">
+                            <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown">Join Us <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="sponsor-a-child.html">Sponsor a Child</a></li>
+                                <li><a href="volunteer.html"
+                                        style="text-decoration: underline; font-weight: bold; color: honeydew;">Volunteering</a>
+                                </li>
+                                <li><a href="visit.html">Visit TFM</a></li>
+                                <li><a href="pray.html">Pray with us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="space_navbar_buttons ">
+                        <span class="text-center">
+                            <a class=" btn-radius-style" href="donate.html"> <i class="fas fa-heart"></i> Donate</a>
+                        </span>
+                        <span class="mb-0 ml-1 pr-1 d-lg-none d-xl-inline">
+                            <a class="social_handles"
+                                href="https://web.facebook.com/profile.php?id=150644615117946&fref=ts"><i
+                                    class="fab fa-facebook"></i></a>
+                        </span>
+                        <span class="mb-0">
+                            <a class="social_handles d-lg-none d-xl-inline"
+                                href="https://www.instagram.com/trustfutureministries/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="all_page_title" style="background: url(/media/images/inner-bg3.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Volunteer</h1>
+                    <nav id="bread-nav">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home </a>
+                            </li>
+                            <li>
+                                Volunteering
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section container_dark">
+        <div class="container">
+            <div class="row container-header">
+                <div class="col-lg-8 ">
+                    <h1>Volunteering</h1>
+                    <p>
+                        Volunteering is rewarding and appealing. You will not only gain valuable experience
+                        but also help us to extend the impact of Trust Future Ministries and to fulfill our mission.
+                        You can help us grow and prosper by sharing your talents. Join fellow volunteers and lend
+                        a hand, explore a host country, build global friendships and make a difference.
+                    </p>
+
+                </div>
+            </div>
+            <div class="row container-header sponsor-causes">
+                <div class="col-lg-6 text-center cause-normal">
+                    <div class="cause-thumb">
+                        <img class="img-fluid img-volunteer" src="/media/images/volunteer_img1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 work-decs2 px-4 pt-2">
+                    <h2> Know as a volunteer:</h2>
+                    <p>
+                        We are so much thankful for you being interested to be part of the TFM Commununity. Trust
+                        Future Ministries has welcomed many volunteers from all over the world and we always
+                        love to welcome more change-makers to be part of this amazing work of helping orphan children
+                        thrive and empowering youths and widows to become self sustainable.
+                    </p>
+                    <p>
+                        Uganda is a beautiful country. There are many things to see and do,
+                        there are also some helpful things to know before visiting. Our staff has a lot
+                        of experience traveling and living in Uganda, especially our regions of operation. You can
+                        access some of our tips, thoughts, and resources by <span class="btn-radius-btn1"> <a
+                                href="">clicking this link; <i class=" pl-2 fas fa-arrow-right"></i></a></span>
+                    </p>
+                    <p>
+                        Lastly, our team is so much ready to guide and help you whenever you are stack during
+                        your time of volunteering at Trust Future Ministies, choose a project
+                        from the list below that fit you well.
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section><!-- end of first section -->
+    <section class="section">
+        <div class="container">
+            <div class="objective-header">
+                <h2> Available Internship and volunteer Opportunities</h2>
+                <p></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="single-decs">
+                        <h4>Management</h4>
+                        <img src="/media/images/volunteer_management.png" alt="">
+                        <p>This involves accountancy and finance of the projects, Project management planning,
+                            implementation and monitoring, defining budget and evaluation, finding and routing
+                            new sources of sustainability.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="single-decs">
+                        <h4>Teaching</h4>
+                        <img src="/media/images/volunteer_teaching.png" alt="">
+                        <p>In collaboration with our teaching staffs, you will help to teach subjects such as English,
+                            physical education, work as a sports teacher and or a chapel teacher to spiritually
+                            uplift our children in knowing God.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="single-decs">
+                        <h4>Skills Training</h4>
+                        <img src="/media/images/volunteer_training.png" alt="">
+                        <p>
+                            Volunteers will help in training women and youths skills in Computer use, tailoring, craft
+                            making and hair styling. We also welcome new ideas and new skills that can suit and help
+                            improve their lives.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="single-decs">
+                        <h4>Marketing</h4>
+                        <img src="/media/images/volunteer_marketing.png" alt="">
+                        <p>
+                            This incorporates strategic marketing, promotion of projects and finding market for products
+                            from the empowerment program using videos, social networks, flyers, brochures,etc to enlarge
+                            the organisation visibility.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="single-decs">
+                        <h4>Video/ Photograpy</h4>
+                        <img src="/media/images/volunteer_photography.png" alt="">
+                        <p>
+                            This project targets volunteers with skills in photograpy and videography. Your tasks
+                            will include taking photos of on going projects and developing short videos for marketing
+                            and
+                            advertising TFM.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+                    data-aos-duration="1000">
+                    <div class="single-decs">
+                        <h4>Public Relations</h4>
+                        <img src="/media/images/volunteer_relations.png" alt="">
+                        <p>
+                            With the objective of recruiting new volunteers or interns, build a strong network and
+                            collecting
+                            supports, you will be looking for both local and international partners with School,
+                            foundations
+                            and companies.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- End of section 2 -->
+
+    <section class="section testimonial">
+        <div class="container ">
+            <div class="row container-header">
+                <div class="col-lg-8 ">
+                    <h2>Volunteer Testimonials</h2>
+                </div>
+            </div>
+            <div class="owl-carousel owl-testimonial owl-theme">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/Jean-Nita.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        I really loved to be in contact with children in the school and also like
+                                        Ugandan people. There is a huge difference between children in Europe and
+                                        children here in Uganda. They are curious, listening, clever and respectful.
+                                        And they are also able to share to each other.
+                                        I was supposed to teach art. But I wanted to do something for the school in
+                                        a long term. Because if I teach art, of course it will be nice, but one time,
+                                        children will leave the school. So we decided to build a garden to try to
+                                        make themselves self sufficient. I hope it will work.
+                                        <br>
+                                        <strong><em>Volunteer 2016.</em></strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/jean-nitah-mini.jpg"
+                                    alt="">
+                                <h5 class="testimonial-author">
+                                    Jean Nita -----> France
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/ellie-lee.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        I’m Ellie from South Korea. I’ve been volunteering with TFM for 3 weeks.
+                                        Ya, it is not a long period, yet I’ve learnt a lot during my short stay
+                                        in here.. By the way to give you a brief introduction on myself, I’m a
+                                        final year undergraduate student in UK who always wonder about the world
+                                        out of the textbook. Before making my decision to come here, a security
+                                        issue was my main concern above all and I’m sure that most of you might
+                                        be hesitating because of this issue. However, upon my arrival, I haven’t
+                                        faced with any danger or threat so far. I think this is due to the effort
+                                        made by TFM’s staffs and my homestay family. The staffs in Trust future
+                                        Uganda are nice and so supportive in that they are there whenever you need
+                                        help. I feel safe and comfortable as I can see that they are trying their
+                                        best to guarantee my safety and happy stay in Uganda. Also, I really love
+                                        my Ugandan family. I’m staying with the local family here. Especially I’m
+                                        enjoying my evening tea time with them. We share our ideas on certain topic,
+                                        discuss the Ugandan politics which is my interested field. They are lovely,
+                                        kind and tolerant.
+                                        To sum up, I’m learning how to love, how to share and how to use my knowledge
+                                        for others. I’m so happy that I made such a great decision to come here and
+                                        having this valuable time to work with these wonderful people and the children.
+                                        If you are hesitating to come, just give it a shot. You will experience more
+                                        than
+                                        you thought. Cheers to future volunteers. Best wishes, Ellie.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/ellie-mini.jpg" alt="">
+                                <h5 class="testimonial-author">
+                                    Ellie Lee ----> South Korea
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/Anna-Lipphardt.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        I’ve been volunteering at TFM from 10th October 2013 to 17th June 2014.
+                                        At that time I was 20 years old and I just had finished school. I spent
+                                        9 months in Uganda and it was the first time I have been abroad for such
+                                        a long period of time. It was an exceptional and incredible experience
+                                        for me to spend some time abroad and support Trust Future Ministries. I got
+                                        to know so many kind and powerful people. Furthermore I have learned so
+                                        much about the Ugandan culture and had the chance to discover a lot of
+                                        the impressive and magnificent nature all over the country. All the members
+                                        of TFM which made me become a part of their “family” are doing a great job
+                                        and are highly motivated to improve the everyday life of children, the youth
+                                        and women in Nabweru and the surrounding areas.
+                                        <br>
+                                        <strong><em>Volunteer 2014.</em></strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/anna-Lipphardt-mini.jpg"
+                                    alt="">
+                                <h5 class="testimonial-author">
+                                    Anna Lipphardt ---> Germany
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/charlotte-dupplex.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        I spend 3 months in a primary school in Nabweru, TFM, near to the
+                                        big city of Kampala!:) That was a nice experience, I learned how to
+                                        teach to young kids, how to animate them,… I shared great time with
+                                        them, with their teachers, … We even danced all together too. That
+                                        was really funny! I start to appreciate the music that they all were
+                                        listening… Even to a point where I shout and applause for “Bebe cool”!
+                                        That was for me, a great social and human experience who stop quickly
+                                        and the return was a little bit shocking I think, even more because it
+                                        was in winter but anyway this was a really good experience!
+                                        <br>
+                                        <strong><em>volunteer 2015.</em></strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/charlotte-mini.jpg"
+                                    alt="">
+                                <h5 class="testimonial-author">
+                                    Charlotte du Plessix ----- Belgium
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/Mia Farrés.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        The first time I went to TFM I discovered a wonderful place full of love and
+                                        life.
+                                        Two months where not enough and the same year I flew back for two more months! I
+                                        felt life was just about enjoying and learning from the local volunteers as well
+                                        as learning from the kids. It was also fantastic to know about the positive
+                                        impact
+                                        that the organization has on the community. I remember it was easy to build a
+                                        natural
+                                        and powerful relationship with the kids and the local volunteers, we took care
+                                        of each
+                                        other, I felt welcomed and loved. I am sure there will always be a huge piece of
+                                        my
+                                        heart in Uganda with all the TFM family.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/Mia-mini.jpg" alt="">
+                                <h5 class="testimonial-author">
+                                    Mia Farrés Galtés ---> Spain
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/Riina Sinkko.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        I have been a volunteer at Trust Future Ministries since the beginning of July
+                                        2014
+                                        until the end of July 2015 so all in all 13 months. I decided to volunteer
+                                        because
+                                        I felt like I want to do something sincerely for other people. I felt like the
+                                        world
+                                        I was living in was often too focused on individuals and achieving one’s own
+                                        goals.
+                                        I wanted to break out of that and teach myself how to work for someone without
+                                        getting paid or getting something directly to myself. I wanted to open my
+                                        perspectives
+                                        and challenge myself to do something I had never done before. The decision to
+                                        volunteer
+                                        offered me a unique chance to learn to know a new and totally different culture
+                                        from the
+                                        one I had grown up in and above all an opportunity to learn how to live in it.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/Riina-mini.jpg" alt="">
+                                <h5 class="testimonial-author">
+                                    Riina Sinkko ---> Finland
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-img">
+                                <img class="img-fluid" src="/media/images/Volunteers/Nita Vilarru.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="testimonial-icon">
+                                <span class="testimonial-quote"></span>
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <p class="inner-testimonial-text">
+                                        Trust Future Ministries was a piece of light in my life. I was prepared for a
+                                        new
+                                        experience, but how to be prepared for that intense and true happiness? It felt
+                                        like magic when we could arrive to do the art activities and find the kids
+                                        smiling
+                                        (from ear to ear) every morning we would cross the school's door. The kids
+                                        showed
+                                        me how to share, love and feel more each and every day..
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-author-box">
+                                <img class="testimonial-avator" src="/media/images/Volunteers/Nitah-min.jpg" alt="">
+                                <h5 class="testimonial-author">
+                                    Anna Vilarru ---> Spain
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> <!-- End of  section 2 -->
+
+    <section class="section container_dark gallery-block volunteer-gallery">
+        <div class="row container-header">
+            <div class="col-lg-8 ">
+                <h2>Special moments with our Previous Volunteers</h2>
+                <p>
+                    Check out our interesting and memorable time with volunteers during their time of at Trust Future
+                    Ministries.
+                </p>
+            </div>
+        </div>
+        <div class="row no-gutters" data-aos="fade" data-aos-easing="ease-out" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/Gregg.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/Gregg.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body">A previous volunteer with one of our Trust
+                            Future Primary school children after a class lesson he conducted.</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/Lotte.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/Lotte.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body">Lotte our previous volunteer on a sunday
+                            evenning with some of the children who make their home at Trust Future Ministries.</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/Haruka.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/Haruka.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body"> The person in the photo is Haruka and she
+                            comes from Japan. This was one of her moments with kids at TFM in 2019</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/roger.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/roger.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body"> Special times of our previous volunteer Roger
+                            from Spain with children at
+                            the school campus.</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/olga.jpg"">
+                    <img class=" img-fluid image" src="media/images/volunteer-gallery/olga.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body"> Olga a previous volunteer at Trust Future
+                            Ministries spear heading a reading session.</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/Enrico.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/Enrico.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom Image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body">Enrico a previous volunteer who specialised in
+                            photography and videography illustrating to the kids how the camera works.</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/Amara.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/Amara.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom Image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body">Amara a previous volunteer from Spain with one
+                            of our
+                            staffs at Trust Future Ministries. TFM celebrates everybody who joins our working
+                            team.</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 item zoom-on-hover">
+                <a class="lightbox" href="media/images/volunteer-gallery/Lean.jpg">
+                    <img class="img-fluid image" src="media/images/volunteer-gallery/Lean.jpg">
+                    <span class="description">
+                        <span class="d-none d-sm-block description-heading">Zoom Image <i
+                                class="fas fa-search-plus"></i></span>
+                        <span class="d-none d-lg-block description-body">Lean a previous volunteer from France with one
+                            of our Trust Future kids in 2019 at our organisation campus.</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section><!-- End of section 4 -->
+
+    <section class="section container_dark sponsor_section">
+        <hr class="hr-style" data-content="Volunteer today">
+        <div class="container">
+            <div class="row container-header">
+                <div class="col-lg-8 ">
+                    <h1>Apply to volunteer</h1>
+                    <p>
+                        We hope you have enjoyed our short trip through what volunteering can be like
+                        at Trust Future Ministries. To continue and become part of our amazing team,
+                        please go ahead and fill this form below, one of our team member will quikly
+                        get back to you and take you through the entire process.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-10 offset-lg-1">
+                <div class="my_form">
+                    <div id="message"></div>
+                    <form id="volunteer-form" action="volunteer.php" name="volunteer-form" method="POST">
+                        <fieldset class="row-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control"
+                                        placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control"
+                                        placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label for="email">Please Enter a valid Email *</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label for="date_choosen">Select dates when you want to volunteer. *</label>
+                                    <input type="text" id="date_chosen" class="form-control" name="daterange"
+                                        value="Select dates" placeholder="select date" />
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="project_chosen" id="project_chosen" class="form-control"
+                                        placeholder="Project to volunteer in">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6"
+                                        placeholder="Give us more details about you volunteering with us"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                <button type="submit" value="SEND" id="submit" class="btn btn-radius-style"
+                                    style="font-weight: bold; font-size: 21px;">submit form</button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> <!-- End of section 5 -->
+
+
+    <footer>
+        <div class="footer-style">
+            <div class="wide-container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <h5 class="footer-header">Financial Accountability</h5>
+                        <div class="d-flex justify-content-start">
+                            <img class="img-fluid" src="/media/images/Audited_accounts_2019.jpg" alt="Responsive image">
+                        </div>
+                        <p class="pt-3">Trust Future Ministries receives a four star rating for financial
+                            accountability.
+                            We treasure and thank you all who stand with us to serve the indigent people in our
+                            community.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <h5 class="footer-header">Social media handles</h5>
+                        <ul class="footer-widget">
+                            <li>
+                                <a href="https://web.facebook.com/profile.php?id=150644615117946&fref=ts"><i
+                                        class="fab fa-facebook"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trustfutureministries/"><i
+                                        class="fab fa-instagram"></i>
+                                    Intagram</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCsgXCuDbUYqohdT1DRfe0iQ"><i
+                                        class="fab fa-youtube"></i> Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <h5 class="footer-header">Direct Links</h5>
+                        <ul class="direct-links">
+                            <li><a href="who-we-are.html"> About us </a></li>
+                            <li><a href="volunteer.html"> volunteering</a></li>
+                            <li><a href="sponsor-a-child.html"> sponsor a child</a></li>
+                            <li><a href="empowerment.html"> Women Empowerment</a></li>
+                            <li><a href="education.html"> Trust Future Primary School</a></li>
+                            <li><a href="donate.html"> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 ">
+                        <h5 class="footer-header">contact us</h5>
+                        <ul class="footer-widget">
+                            <li>
+                                <a href="mailto:info@trustfutureministries.org"> <i class="fas fa-envelope"></i>
+                                    info@trustfutureministries.org</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="fas fa-globe"></i> www.trustfutureministries.org</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> Wakiso District - Uganda
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>+256 200 902266
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright-text">
+            <div class="container">
+                <div class="col-lg-12">
+                    <p class=" text-center">
+                        Copyright &copy; 2011 -
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved. <span
+                            class="lastfooter-break1"> Trust Future Ministries </span> <span
+                            class="lastfooter-break2"><i class="far fa-heart" aria-hidden="true"></i> <strong> <em>
+                                    Powered by Jlibz</em></strong></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fas fa-angle-up"></i></a>
+
+    <script type="text/javascript" src="/assets/js/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/lib/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="/assets/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="/assets/js/lib/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/lib/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

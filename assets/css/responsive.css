@@ -1,0 +1,675 @@
+/* ============================================================= */
+
+/* BREAKING POINTS */
+
+/* ============================================================= */
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .navbar .space_navbar_buttons {
+        margin-top: 10px;
+    }
+    .navbar .nav-item {
+        padding-top: 2px;
+        margin-top: 3px;
+    }
+    .navbar-brand img {
+        height: 45px!important;
+    }
+    .swiper-container {
+        height: 60vh;
+    }
+    .swiper-container img {
+        height: 60vh;
+        object-fit: cover;
+        object-position: right;
+    }
+    .footer-header {
+        color: #1091fc;
+        margin-top: 30px;
+    }
+    .lastfooter-break1 {
+        display: block;
+    }
+    .navbar-collapse {
+        padding-top: 20px;
+        background-color: #e3f2fd;
+        ;
+        z-index: 5;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    .navbar-collapse.collapsing {
+        z-index: 3;
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+    .navbar-collapse.show {
+        -webkit-box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        z-index: 3;
+        left: 0;
+        -webkit-transition: left 0.2s ease-in;
+        -o-transition: left 0.2s ease-in;
+        -moz-transition: left 0.2s ease-in;
+        transition: left 0.2s ease-in;
+    }
+    .dropdown-menu {
+        border: none;
+        margin-left: 0;
+    }
+    .flip-card {
+        height: 50vh!important;
+    }
+    .flip-card-back {
+        padding: 3rem 1rem!important;
+    }
+    .team-header h5 {
+        font-size: 0.91rem!important;
+    }
+    .staffs-header {
+        margin-top: 80px;
+    }
+    .uganda-team .card {
+        margin: 10px 40px;
+    }
+    .uganda-team .card-img-top {
+        width: 170px!important;
+    }
+    .uganda-team .staffs .card-img-top {
+        width: 170px!important;
+    }
+    .work-decs2 h2 {
+        padding-bottom: 0px;
+        margin-bottom: 0px!important;
+        margin-top: 30px!important;
+    }
+    .decs-over {
+        top: -4rem;
+        margin-left: 20px!important;
+        margin-right: 20px;
+    }
+    .owl-testimonial .testimonial-icon {
+        margin-top: 15px!important;
+    }
+    .owl-testimonial .testimonial-text {
+        margin-top: 1rem!important;
+    }
+    .owl-testimonial .owl-nav {
+        top: -10%!important;
+        right: 40%!important;
+    }
+    .owl-children .children-details {
+        overflow-x: scroll;
+    }
+    .owl-children .children-details ul {
+        font-weight: normal!important;
+        margin: 10% 20%;
+    }
+    .sponsor-causes ul li img {
+        height: 60px;
+        margin: 10px 0;
+    }
+    .sponsor-causes ul li h5 {
+        margin-left: 9px;
+        text-align: start;
+        font-weight: normal!important;
+    }
+    .gallery-block .zoom-on-hover:hover .image {
+        transform: scale(0.9);
+        -webkit-box-shadow: 0px 0px 68px -26px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 68px -26px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 68px -26px rgba(0, 0, 0, 0.75);
+    }
+    .visit-header .visit_header_info {
+        padding-top: 24px;
+    }
+    .visit-header .visit_header_info h1 {
+        font-size: 34px;
+    }
+    .visit-header .visit_header_info p {
+        margin-bottom: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .contact-us .each-contact {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact-us .card {
+        margin-bottom: 50px;
+    }
+    .contact-us .card .icon-wrapper {
+        width: 4rem;
+        height: 4rem;
+        left: 43%;
+    }
+    .contact-us .card .card-title {
+        font-size: 18px!important;
+    }
+    .all_page_title {
+        text-align: center;
+    }
+    .all_page_title h1 {
+        margin-bottom: 40px;
+    }
+    #bread-nav {
+        position: relative!important;
+        transform: translateY(0%);
+    }
+    .reccurring {
+        padding: 20px 20px!important;
+    }
+    .space-donations {
+        margin-bottom: 30px;
+    }
+    .reccuring-donate td input, .reccuring-donate td select {
+        display: block;
+        border-radius: 3px;
+        border: 2px solid rgb(180, 178, 178);
+        width: 80%!important;
+    }
+    .donate-each {
+        margin-top: 50px!important;
+    }
+    .donate-each-content h3 {
+        font-size: 21px!important;
+    }
+    .donate-each .btn-radius-btn6 {
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .btn-radius-style2 {
+        padding: 3px 15px!important;
+        font-weight: normal!important;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .navbar .space_navbar_buttons {
+        margin-top: 10px;
+    }
+    .navbar .nav-item {
+        padding-top: 2px;
+        margin-top: 3px;
+    }
+    .dropdown-menu {
+        border: none;
+    }
+    .swiper-container {
+        height: 60vh;
+    }
+    .swiper-container img {
+        height: 60vh;
+        object-fit: cover;
+        object-position: -45vmin;
+    }
+    .footer-header {
+        color: #1091fc;
+        margin-top: 5px;
+    }
+    .lastfooter-break2 {
+        display: block;
+    }
+    .navbar-collapse {
+        padding-top: 20px;
+        background-color: #e3f2fd;
+        ;
+        z-index: 5;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    .navbar-collapse.collapsing {
+        z-index: 3;
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+    .navbar-collapse.show {
+        -webkit-box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        z-index: 3;
+        left: 0;
+        -webkit-transition: left 0.2s ease-in;
+        -o-transition: left 0.2s ease-in;
+        -moz-transition: left 0.2s ease-in;
+        transition: left 0.2s ease-in;
+    }
+    .team-header h5 {
+        font-size: 1.1rem!important;
+    }
+    .staffs-header {
+        margin-top: 70px;
+    }
+    .uganda-team .card-img-top {
+        border-radius: 90px;
+        position: absolute;
+        top: -50px;
+        margin-top: 10px;
+        width: 200px!important;
+        -webkit-box-shadow: 0px -44px 55px -41px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px -44px 55px -41px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px -44px 55px -41px rgba(0, 0, 0, 0.2);
+    }
+    .uganda-team .ug-staffs {
+        margin-bottom: 1.2rem;
+    }
+    .uganda-team .staffs .card-img-top {
+        width: 170px!important;
+    }
+    .work-decs2 h2 {
+        padding-bottom: 0px;
+        margin-bottom: 0px!important;
+        margin-top: 30px!important;
+    }
+    .decs-over {
+        max-height: 600px;
+    }
+    .owl-testimonial .testimonial-icon {
+        margin-top: 15px!important;
+    }
+    .owl-testimonial .testimonial-text {
+        margin-top: 1rem !important;
+    }
+    .owl-testimonial .owl-nav {
+        top: -20%!important;
+        right: 3%!important;
+    }
+    .owl-children .children-details {
+        font-weight: normal!important;
+        font-size: 16px!important;
+    }
+    .owl-children .children-details ul {
+        margin: 4% 15%;
+    }
+    .owl-children .card-barner .card-text {
+        display: none!important;
+    }
+    .owl-children .prev-slide {
+        left: -10%!important;
+    }
+    .owl-children .next-slide {
+        right: -12%!important;
+    }
+    .owl-children .card-barner .child-detail-bottom {
+        display: flex;
+        justify-content: center!important;
+    }
+    .visit-header .visit_header_info {
+        padding-top: 20px;
+    }
+    .visit-header .visit_header_info p {
+        margin-bottom: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .contact-us .each-contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contact-us .card {
+        margin-left: -0px;
+        margin-right: -0px;
+        margin-bottom: 50px;
+    }
+    .contact-us .card .icon-wrapper {
+        width: 4rem;
+        height: 4rem;
+        left: 43%;
+    }
+    .contact-us .card .card-title {
+        font-size: 19px!important;
+    }
+    .all_page_title {
+        text-align: center;
+    }
+    .all_page_title h1 {
+        margin-bottom: 45px;
+    }
+    #bread-nav {
+        position: relative!important;
+    }
+    .space-donations {
+        margin-bottom: 40px;
+    }
+    .reccuring-donate td input, .reccuring-donate td select {
+        width: 70%!important;
+    }
+    .donate-each {
+        margin-top: 45px!important;
+    }
+    .donate-each-content h3 {
+        font-size: 22px!important;
+    }
+    .donate-each .btn-radius-btn6 {
+        font-size: 18px;
+        padding: 7px 12px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-radius-style2 {
+        padding: 3px 15px!important;
+        font-weight: normal!important;
+    }
+    .fixed-menu {
+        padding: 5px 30px!important;
+    }
+    .navbar .space_navbar_buttons {
+        margin-top: 10px;
+    }
+    .navbar .nav-item {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-top: 3px;
+    }
+    .navbar-collapse {
+        padding-top: 20px;
+        background-color: #e3f2fd;
+        z-index: 5;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    .navbar-collapse.collapsing {
+        z-index: 3;
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+    .navbar-collapse.show {
+        -webkit-box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.54);
+        z-index: 3;
+        left: 0;
+        -webkit-transition: left 0.1s ease-in;
+        -o-transition: left 0.1s ease-in;
+        -moz-transition: left 0.1s ease-in;
+        transition: left 0.1s ease-in;
+    }
+    .dropdown-menu {
+        border: none;
+    }
+    .flip-card {
+        height: 43vh!important;
+    }
+    .staffs-header {
+        margin-top: 70px;
+    }
+    .uganda-team .ug-staffs {
+        margin-bottom: 1.2rem;
+    }
+    .uganda-team .card-img-top {
+        width: 200px!important;
+        margin-top: 10px;
+    }
+    .uganda-team .staffs .card-img-top {
+        width: 170px!important;
+    }
+    .owl-testimonial .testimonial-img .img-fluid {
+        height: 400px;
+        object-fit: cover;
+    }
+    .owl-testimonial .testimonial-quote {
+        margin-top: 2px!important;
+        padding-top: 3px!important;
+        padding-bottom: 3px!important;
+    }
+    .owl-testimonial .testimonial-quote::before {
+        font-size: 15px!important;
+    }
+    .owl-testimonial .testimonial-text {
+        margin-top: 1.2rm!important;
+        font-size: 16px;
+    }
+    .owl-testimonial .owl-nav {
+        position: absolute;
+        top: -36%!important;
+        right: 10%!important;
+    }
+    .owl-children .children-details ul {
+        margin: 9% 15%;
+    }
+    .work-decs2 h2 {
+        padding-bottom: 0px;
+        margin-bottom: 0px!important;
+        margin-top: 30px!important;
+    }
+    .decs-over {
+        max-height: 500px;
+    }
+    .visit-header .visit_header_info {
+        padding-top: 20px;
+    }
+    .visit-header .visit_header_info p {
+        margin-bottom: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .contact-us .card {
+        height: 200px;
+    }
+    .contact-us .card .icon-wrapper {
+        width: 3.7rem;
+        height: 3.7rem;
+        left: 36%;
+    }
+    .contact-us .card .card-body {
+        padding-top: 30px!important;
+    }
+    .contact-us .card .card-body p {
+        font-size: 14px;
+    }
+    .space-donations {
+        margin-bottom: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fixed-menu {
+        padding: 10px 40px!important;
+    }
+    .navbar .space_navbar_buttons {
+        margin-bottom: 0px!important;
+    }
+    #menu-items {
+        font-size: 15px;
+    }
+    .slide_info p {
+        margin-left: 10px;
+    }
+    .dropdown-menu {
+        border-left: 1px solid #00000034;
+        border-bottom: 1px solid #00000034;
+        border-right: 1px solid #00000034;
+        border-top: none;
+    }
+    .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        display: block;
+    }
+    .staffs-header {
+        margin-top: 100px;
+    }
+    .staffs-content div .mt-5 {
+        margin-top: 4.5rem!important;
+    }
+    .uganda-team .card-img-top {
+        border-radius: 90px;
+        position: absolute;
+        top: -50px;
+        width: 200px!important;
+        -webkit-box-shadow: 0px -44px 55px -41px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px -44px 55px -41px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px -44px 55px -41px rgba(0, 0, 0, 0.2);
+    }
+    .uganda-team .staffs .card-img-top {
+        width: 170px!important;
+    }
+    .decs-over {
+        max-height: 500px;
+    }
+    .sponsor-causes ul li img {
+        height: 90px;
+    }
+    .owl-testimonial .testimonial-img .img-fluid {
+        height: 400px;
+        object-fit: cover;
+    }
+    .owl-testimonial .owl-nav {
+        position: absolute;
+        top: -35%!important;
+        right: 20%;
+    }
+    .owl-children .children-details ul {
+        margin: 7% 10%;
+    }
+    .owl-children .card-barner .medium-remove {
+        display: none!important;
+    }
+    .cause-normal .img-fluid {
+        height: 420px!important;
+        object-fit: cover;
+    }
+    .cause-normal .img-volunteer {
+        height: 500px!important;
+        object-fit: cover;
+    }
+    .visit-header .visit_header_info {
+        margin: 20px auto;
+        position: absolute;
+    }
+    .contact-us .card .icon-wrapper {
+        width: 4.4rem;
+        height: 4.4rem;
+        left: 39%;
+    }
+    .contact-us .card .card-body p {
+        font-size: 17px;
+    }
+    .one-time .text-below {
+        margin-top: 15px;
+    }
+    .one-time a {
+        margin-top: 55px;
+    }
+    .donate_cause .cause-normal .img-fluid {
+        height: 450px!important;
+        object-fit: cover;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .fixed-menu {
+        padding: 10px 40px!important;
+    }
+    .dropdown-menu {
+        border-left: 1px solid #00000034;
+        border-bottom: 1px solid #00000034;
+        border-right: 1px solid #00000034;
+        border-top: none;
+    }
+    .slide_info {
+        margin-top: 6rem;
+    }
+    .slide_info p {
+        margin-left: 14px;
+    }
+    .dropdown:hover .dropdown-menu {
+        padding-top: 30px;
+        visibility: visible;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        display: block;
+    }
+    .staffs-header {
+        margin-top: 100px;
+    }
+    .staffs-content div .mt-5 {
+        margin-top: 6rem!important;
+    }
+    .uganda-team .card-img-top {
+        width: 200px!important;
+    }
+    .sponsor-causes .work-decs2 h2 {
+        font-size: 37px;
+    }
+    .decs-over {
+        max-height: 500px;
+    }
+    .owl-children .children-details ul {
+        margin: 10% 17%;
+    }
+    .owl-children .card-barner .child-details i {
+        font-size: 13px!important;
+    }
+    .visit-header .visit_header_info {
+        margin: 40px auto;
+        position: absolute;
+    }
+    .contact-us .card .icon-wrapper {
+        width: 4.4rem;
+        height: 4.4rem;
+        left: 39%;
+    }
+    .donate_cause .cause-normal .img-fluid {
+        height: 430px!important;
+    }
+    .one-time p {
+        margin-top: 15px;
+    }
+    .one-time .text-below {
+        margin-top: 20px;
+    }
+    .one-time a {
+        margin-top: 80px;
+    }
+}

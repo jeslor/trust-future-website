@@ -1,70 +1,70 @@
-"use Strict";
+'use Strict'
 
 // preloader
 // ===========================
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-  preloader.classList.add("set-off");
-});
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader')
+  preloader.classList.add('set-off')
+})
 
 // =================================
 // humburger icon
 // =================================
 $(document).ready(function () {
-  $(".first-button").on("click", function () {
-    $(".animated-icon1").toggleClass("open");
-  });
+  $('.first-button').on('click', function () {
+    $('.animated-icon1').toggleClass('open')
+  })
 
   // Scroll slowly the dropdown menu
   // ================================================================
-  $(".dropdown").on("show.bs.dropdown", function () {
-    $(this).find(".dropdown-menu").first().stop().slideDown();
-  });
+  $('.dropdown').on('show.bs.dropdown', function () {
+    $(this).find('.dropdown-menu').first().stop().slideDown()
+  })
 
-  $(".dropdown").on("hide.bs.dropdown", function () {
-    $(this).find(".dropdown-menu").first().stop().slideUp();
-  });
+  $('.dropdown').on('hide.bs.dropdown', function () {
+    $(this).find('.dropdown-menu').first().stop().slideUp()
+  })
 
   // fixed navbar on scroll
   // ============================================
-  $(window).on("scroll", function () {
+  $(window).on('scroll', function () {
     if ($(window).scrollTop() > 27) {
-      $(".navbar-light").addClass("fixed-menu");
+      $('.navbar-light').addClass('fixed-menu')
     } else {
-      $(".navbar-light").removeClass("fixed-menu");
+      $('.navbar-light').removeClass('fixed-menu')
     }
-  });
+  })
 
   // scroll bact to top
   // =========================================
-  if ($("#scroll-to-top").length) {
+  if ($('#scroll-to-top').length) {
     var scrollTrigger = 100, // px
       backToTop = function () {
-        var scrollTop = $(window).scrollTop();
+        var scrollTop = $(window).scrollTop()
         if (scrollTop > scrollTrigger) {
-          $("#scroll-to-top").addClass("show");
+          $('#scroll-to-top').addClass('show')
         } else {
-          $("#scroll-to-top").removeClass("show");
+          $('#scroll-to-top').removeClass('show')
         }
-      };
-    backToTop();
-    $(window).on("scroll", function () {
-      backToTop();
-    });
-    $("#scroll-to-top").on("click", function (e) {
-      e.preventDefault();
-      $("html,body").animate(
+      }
+    backToTop()
+    $(window).on('scroll', function () {
+      backToTop()
+    })
+    $('#scroll-to-top').on('click', function (e) {
+      e.preventDefault()
+      $('html,body').animate(
         {
           scrollTop: 0,
         },
-        700
-      );
-    });
+        700,
+      )
+    })
   }
 
   // owl-carousel
   // =================
-  var owl = $(".program-carousel");
+  var owl = $('.program-carousel')
 
   owl.owlCarousel({
     loop: true,
@@ -92,11 +92,11 @@ $(document).ready(function () {
         loop: false,
       },
     },
-  });
+  })
 
   // sponsor and volunteer testmonials
   // ========================================
-  $(".owl-testimonial").owlCarousel({
+  $('.owl-testimonial').owlCarousel({
     margin: 10,
     nav: true,
     dots: false,
@@ -104,15 +104,15 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 12000,
     autoplayHoverPause: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeInUp",
+    animateOut: 'fadeOut',
+    animateIn: 'fadeInUp',
     navText: [
       '<i class="fas fa-chevron-left"></i>',
       '<i class="fas fa-chevron-right"></i>',
     ],
-  });
+  })
 
-  $(".owl-children").owlCarousel({
+  $('.owl-children').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
@@ -141,235 +141,238 @@ $(document).ready(function () {
         loop: false,
       },
     },
-  });
+  })
 
   // Sponsor form
   // ====================================
-  $("#sponsorship-form").submit(function () {
-    var action = $(this).attr("action");
-    $("#message").slideUp(750, function () {
-      $("#message").hide();
-      $("#submit")
+  $('#sponsorship-form').submit(function () {
+    var action = $(this).attr('action')
+    $('#message').slideUp(750, function () {
+      $('#message').hide()
+      $('#submit')
         .after('<img src="media/images/ajax-loader.gif" class="loader">')
-        .attr("disabled", "disabled");
+        .attr('disabled', 'disabled')
       $.post(
         action,
         {
-          first_name: $("#first_name").val(),
-          last_name: $("#last_name").val(),
-          email: $("#email").val(),
-          address: $("#address").val(),
-          children_total: $("#children_total").val(),
-          children_chosen: $("#children_chosen").val(),
-          comments: $("#comments").val(),
-          verify: $("#verify").val(),
+          first_name: $('#first_name').val(),
+          last_name: $('#last_name').val(),
+          email: $('#email').val(),
+          address: $('#address').val(),
+          children_total: $('#children_total').val(),
+          children_chosen: $('#children_chosen').val(),
+          comments: $('#comments').val(),
+          verify: $('#verify').val(),
         },
         function (data) {
-          document.getElementById("message").innerHTML = data;
-          $("#message").slideDown("slow");
-          $("#sponsorship-form img.loader").fadeOut("slow", function () {
-            $(this).remove();
-          });
-          $("#submit").removeAttr("disabled");
-          if (data.match("success") != null)
-            $("#sponsorship-form").slideUp("slow");
-        }
-      );
-    });
-    return false;
-  });
+          document.getElementById('message').innerHTML = data
+          $('#message').slideDown('slow')
+          $('#sponsorship-form img.loader').fadeOut('slow', function () {
+            $(this).remove()
+          })
+          $('#submit').removeAttr('disabled')
+          if (data.match('success') != null)
+            $('#sponsorship-form').slideUp('slow')
+        },
+      )
+    })
+    return false
+  })
 
-  $(".child-button").on("click", function () {
-    var card = $(this).parents(".card").first();
-    var slider = card.find(".children-details");
-    slider.slideToggle();
-  });
+  $('.child-button').on('click', function () {
+    var card = $(this).parents('.card').first()
+    var slider = card.find('.children-details')
+    slider.slideToggle()
+  })
 
-  baguetteBox.run(".no-gutters", {
-    buttons: "auto",
-    async: true,
-  });
+  // baguetteBox.run(".no-gutters", {
+  //   buttons: "auto",
+  //   async: true,
+  // });
 
   // Volunteer form
   // ====================================
-  $(function () {
-    $('input[name="daterange"]').daterangepicker(
-      {
-        locale: {
-          format: "DD-MM-YYYY",
-        },
 
-        startDate: moment(),
-        endDate: moment(),
-        opens: "center",
-      },
-      function (start, end, label) {}
-    );
-  });
-
-  $("#volunteer-form").submit(function () {
-    var action = $(this).attr("action");
-    $("#message").slideUp(750, function () {
-      $("#message").hide();
-      $("#submit")
+  $('#volunteer-form').submit(function () {
+    var action = $(this).attr('action')
+    $('#message').slideUp(750, function () {
+      $('#message').hide()
+      $('#submit')
         .after('<img src="media/images/ajax-loader.gif" class="loader">')
-        .attr("disabled", "disabled");
+        .attr('disabled', 'disabled')
       $.post(
         action,
         {
-          first_name: $("#first_name").val(),
-          last_name: $("#last_name").val(),
-          email: $("#email").val(),
-          date_chosen: $("#date_chosen").val(),
-          project_chosen: $("#project_chosen").val(),
-          comments: $("#comments").val(),
-          verify: $("#verify").val(),
+          first_name: $('#first_name').val(),
+          last_name: $('#last_name').val(),
+          email: $('#email').val(),
+          date_chosen: $('#date_chosen').val(),
+          project_chosen: $('#project_chosen').val(),
+          comments: $('#comments').val(),
+          verify: $('#verify').val(),
         },
         function (data) {
-          document.getElementById("message").innerHTML = data;
-          $("#message").slideDown("slow");
-          $("#volunteer-form img.loader").fadeOut("slow", function () {
-            $(this).remove();
-          });
-          $("#submit").removeAttr("disabled");
-          if (data.match("success") != null)
-            $("#volunteer-form").slideUp("slow");
-        }
-      );
-    });
-    return false;
-  });
+          document.getElementById('message').innerHTML = data
+          $('#message').slideDown('slow')
+          $('#volunteer-form img.loader').fadeOut('slow', function () {
+            $(this).remove()
+          })
+          $('#submit').removeAttr('disabled')
+          if (data.match('success') != null)
+            $('#volunteer-form').slideUp('slow')
+        },
+      )
+    })
+    return false
+  })
 
   // Visitation form
   // ====================================
-  $("#visitor-form").submit(function () {
-    var action = $(this).attr("action");
-    $("#message").slideUp(750, function () {
-      $("#message").hide();
-      $("#submit")
+  $('#visitor-form').submit(function () {
+    var action = $(this).attr('action')
+    $('#message').slideUp(750, function () {
+      $('#message').hide()
+      $('#submit')
         .after('<img src="media/images/ajax-loader.gif" class="loader">')
-        .attr("disabled", "disabled");
+        .attr('disabled', 'disabled')
       $.post(
         action,
         {
-          first_name: $("#first_name").val(),
-          last_name: $("#last_name").val(),
-          email: $("#email").val(),
-          date_chosen: $("#date_chosen").val(),
-          phone: $("#phone").val(),
-          total_visitors: $("#total_visitors").val(),
-          team: $("#team").val(),
-          comments: $("#comments").val(),
-          verify: $("#verify").val(),
+          first_name: $('#first_name').val(),
+          last_name: $('#last_name').val(),
+          email: $('#email').val(),
+          date_chosen: $('#date_chosen').val(),
+          phone: $('#phone').val(),
+          total_visitors: $('#total_visitors').val(),
+          team: $('#team').val(),
+          comments: $('#comments').val(),
+          verify: $('#verify').val(),
         },
         function (data) {
-          document.getElementById("message").innerHTML = data;
-          $("#message").slideDown("slow");
-          $("#visitor-form img.loader").fadeOut("slow", function () {
-            $(this).remove();
-          });
-          $("#submit").removeAttr("disabled");
-          if (data.match("success") != null) $("#visitor-form").slideUp("slow");
-        }
-      );
-    });
-    return false;
-  });
+          document.getElementById('message').innerHTML = data
+          $('#message').slideDown('slow')
+          $('#visitor-form img.loader').fadeOut('slow', function () {
+            $(this).remove()
+          })
+          $('#submit').removeAttr('disabled')
+          if (data.match('success') != null) $('#visitor-form').slideUp('slow')
+        },
+      )
+    })
+    return false
+  })
 
   // Contact form
   // =================================================
-  $("#contact-form").submit(function () {
-    var action = $(this).attr("action");
-    $("#message").slideUp(750, function () {
-      $("#message").hide();
-      $("#submit")
+  $('#contact-form').submit(function () {
+    var action = $(this).attr('action')
+    $('#message').slideUp(750, function () {
+      $('#message').hide()
+      $('#submit')
         .after('<img src="media/images/ajax-loader.gif" class="loader">')
-        .attr("disabled", "disabled");
+        .attr('disabled', 'disabled')
       $.post(
         action,
         {
-          first_name: $("#first_name").val(),
-          last_name: $("#last_name").val(),
-          email: $("#email").val(),
-          phone: $("#phone").val(),
-          comments: $("#comments").val(),
-          verify: $("#verify").val(),
+          first_name: $('#first_name').val(),
+          last_name: $('#last_name').val(),
+          email: $('#email').val(),
+          phone: $('#phone').val(),
+          comments: $('#comments').val(),
+          verify: $('#verify').val(),
         },
         function (data) {
-          document.getElementById("message").innerHTML = data;
-          $("#message").slideDown("slow");
-          $("#contact-form img.loader").fadeOut("slow", function () {
-            $(this).remove();
-          });
-          $("#submit").removeAttr("disabled");
-          if (data.match("success") != null) $("#contact-form").slideUp("slow");
-        }
-      );
-    });
-    return false;
-  });
+          document.getElementById('message').innerHTML = data
+          $('#message').slideDown('slow')
+          $('#contact-form img.loader').fadeOut('slow', function () {
+            $(this).remove()
+          })
+          $('#submit').removeAttr('disabled')
+          if (data.match('success') != null) $('#contact-form').slideUp('slow')
+        },
+      )
+    })
+    return false
+  })
 
-  $("a.to-donate").on("click", function (event) {
+  $('a.to-donate').on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    if (this.hash !== '') {
       // Store hash
-      var hash = this.hash;
+      var hash = this.hash
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $("html, body").animate(
+      $('html, body').animate(
         {
           scrollTop: $(hash).offset().top,
         },
         2000,
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        }
-      );
-      return false;
+          window.location.hash = hash
+        },
+      )
+      return false
     } // End if
-  });
+  })
+
+  // date picker
+  // ==============================
+  $(function () {
+    $('input[name="daterange"]').daterangepicker(
+      {
+        locale: {
+          format: 'DD-MM-YYYY',
+        },
+
+        startDate: moment(),
+        endDate: moment(),
+        opens: 'center',
+      },
+      function (start, end, label) {},
+    )
+  })
 
   // progress on donation
   // ===========================
-  $("#bar1").barfiller({ barColor: "#b2d847", duration: 1500 });
-});
+  // $('#bar1').barfiller({ barColor: '#b2d847', duration: 1500 })
+})
 
 // =================================
 // Swiper Slide
 // =================================
-var swiper = new Swiper(".main-swiper-container", {
+var swiper = new Swiper('.main-swiper-container', {
   loop: true,
-  direction: "horizontal",
+  direction: 'horizontal',
   autoplay: {
     delay: 7000,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + '">' + (index + 1) + '</span>'
     },
   },
   on: {
     slideChangeTransitionStart: function () {
-      $(".slide_info").hide(0);
-      $(".slide_info").removeClass("aos-init").removeClass("aos-animate");
+      $('.slide_info').hide(0)
+      $('.slide_info').removeClass('aos-init').removeClass('aos-animate')
     },
     slideChangeTransitionEnd: function () {
-      $(".slide_info").show(0);
-      AOS.init();
+      $('.slide_info').show(0)
+      AOS.init()
     },
   },
-});
+})
 
-var progranSwiper = new Swiper(".page-swiper-gallery", {
-  effect: "coverflow",
+var progranSwiper = new Swiper('.page-swiper-gallery', {
+  effect: 'coverflow',
   loop: true,
   grabCursor: true,
   autoplay: true,
@@ -379,7 +382,7 @@ var progranSwiper = new Swiper(".page-swiper-gallery", {
   },
   speed: 2000,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 80,
     stretch: 20,
@@ -388,10 +391,10 @@ var progranSwiper = new Swiper(".page-swiper-gallery", {
     slideShadows: true,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     dynamicBullets: true,
     clickable: true,
   },
-});
+})
 
-AOS.init();
+AOS.init()

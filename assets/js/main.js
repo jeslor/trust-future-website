@@ -143,6 +143,7 @@ $(document).ready(function () {
     },
   })
 
+  jQuery.support.cors = true
   // Sponsor form
   // ====================================
   $('#sponsorship-form').submit(function () {
@@ -162,7 +163,7 @@ $(document).ready(function () {
           children_total: $('#children_total').val(),
           children_chosen: $('#children_chosen').val(),
           comments: $('#comments').val(),
-          verify: $('#verify').val(),
+          // verify: $('#verify').val(),
         },
         function (data) {
           document.getElementById('message').innerHTML = data
@@ -209,7 +210,7 @@ $(document).ready(function () {
           date_chosen: $('#date_chosen').val(),
           project_chosen: $('#project_chosen').val(),
           comments: $('#comments').val(),
-          verify: $('#verify').val(),
+          // verify: $('#verify').val(),
         },
         function (data) {
           document.getElementById('message').innerHTML = data
@@ -246,7 +247,7 @@ $(document).ready(function () {
           total_visitors: $('#total_visitors').val(),
           team: $('#team').val(),
           comments: $('#comments').val(),
-          verify: $('#verify').val(),
+          // verify: $('#verify').val(),
         },
         function (data) {
           document.getElementById('message').innerHTML = data
@@ -279,7 +280,7 @@ $(document).ready(function () {
           email: $('#email').val(),
           phone: $('#phone').val(),
           comments: $('#comments').val(),
-          verify: $('#verify').val(),
+          // verify: $('#verify').val(),
         },
         function (data) {
           document.getElementById('message').innerHTML = data
